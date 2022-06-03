@@ -11,6 +11,7 @@ namespace LambdaExpressions
             PersonManagement management = new PersonManagement();
             management.AddData();
             management.GetRecords();
+            management.GetAgeRecords();
         }
     }
 }

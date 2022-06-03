@@ -37,5 +37,13 @@ namespace LambdaExpressions
             var Result = this.personList.FindAll(x => x.Age < 60).Take(2);
             Display(Result);
         }
+        public void GetAgeRecords()
+        {
+            Console.WriteLine();
+            Console.WriteLine("\nUC3 - Retrieve all record from the list for age between 13 to 18");
+            var result = this.personList.FindAll(x => x.Age > 13 && x.Age < 18);
+            Display(result);
+        }
+
     }
 }
