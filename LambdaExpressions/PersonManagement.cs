@@ -44,6 +44,12 @@ namespace LambdaExpressions
             var result = this.personList.FindAll(x => x.Age > 13 && x.Age < 18);
             Display(result);
         }
-
+        public void AgeRecords()
+        {
+            Console.WriteLine("\nUC4 - Retrieve average age in the list");
+            var Result = this.personList.Average(x => x.Age);
+            //Console.WriteLine(Result);
+            Console.WriteLine("The average age of all guys is: " + Result);
+        }
     }
 }

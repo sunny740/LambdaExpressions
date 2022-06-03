@@ -12,6 +12,7 @@ namespace LambdaExpressions
             management.AddData();
             management.GetRecords();
             management.GetAgeRecords();
+            management.AgeRecords();
         }
     }
 }
