@@ -39,7 +39,7 @@ namespace LambdaExpressions
         }
         public void GetAgeRecords()
         {
-            Console.WriteLine();
+            //Console.WriteLine();
             Console.WriteLine("\nUC3 - Retrieve all record from the list for age between 13 to 18");
             var result = this.personList.FindAll(x => x.Age > 13 && x.Age < 18);
             Display(result);
@@ -50,6 +50,20 @@ namespace LambdaExpressions
             var Result = this.personList.Average(x => x.Age);
             //Console.WriteLine(Result);
             Console.WriteLine("The average age of all guys is: " + Result);
+        }
+        public void FindValue()
+        {
+            Console.WriteLine("\nUC5 - Check for specific name present in the list or not") ;
+            var result = this.personList.Where(x => x.Name == "Sunny");
+            if (result != null)
+            {
+                Console.WriteLine("Name Is Present In List");
+            }
+            else
+            {
+                Console.WriteLine("Name Is Not Present In List");
+            }
+            Display(result);
         }
     }
 }
