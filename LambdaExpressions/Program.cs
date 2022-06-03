@@ -10,6 +10,7 @@ namespace LambdaExpressions
             Console.WriteLine(" ***** Welcome To Lambda Expressions *****\n ");
             PersonManagement management = new PersonManagement();
             management.AddData();
+            management.GetRecords();
         }
     }
 }

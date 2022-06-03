@@ -26,8 +26,16 @@ namespace LambdaExpressions
         {
             foreach (var person in list)
             {
-                Console.WriteLine(person.SSN + ". " + person.Name + ", " + person.Address + ", " + person.Age);
+                //Console.WriteLine(person.SSN + ". " + person.Name + ", " + person.Address + ", " + person.Age);
+                Console.WriteLine("Persons Data : {0}, {1}, {2}, {3}", person.SSN, person.Name, person.Address, person.Age);                
             }
+        }
+        public void GetRecords()
+        {
+            
+            Console.WriteLine("\nUC2 - Retrieve top 2 records from the list for age is less than 60");
+            var Result = this.personList.FindAll(x => x.Age < 60).Take(2);
+            Display(Result);
         }
     }
 }
