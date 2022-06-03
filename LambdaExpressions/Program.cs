@@ -14,6 +14,7 @@ namespace LambdaExpressions
             management.GetAgeRecords();
             management.AgeRecords();
             management.FindValue();
+            management.SkipRecords();
         }
     }
 }

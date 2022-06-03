@@ -65,5 +65,11 @@ namespace LambdaExpressions
             }
             Display(result);
         }
+        public void SkipRecords()
+        {
+            Console.WriteLine("\nUC6 - Skip record from the list for age is less than 60");
+            var Result = this.personList.Skip(this.personList.Where(x => x.Age < 60).Count());
+            Display(Result);
+        }
     }
 }
